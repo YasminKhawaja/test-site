@@ -14,9 +14,15 @@
 #         fields:
 #           - { label: "Content", name: "body", widget: "markdown" }
 
+# backend:
+#   name: git-gateway
+#   branch: main
+
 backend:
-  name: git-gateway
+  name: github
+  repo: YasminKhawaja/test-site
   branch: main
+  site_url: https://test-site-three-ebon.vercel.app
 
 media_folder: "images"
 
