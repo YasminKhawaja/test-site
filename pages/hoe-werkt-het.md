@@ -1,4 +1,4 @@
 ---
-title: Hoe werkt het?
+title: Steun
 ---
-Uitleg
+Steun uitleg
