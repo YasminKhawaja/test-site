@@ -22,7 +22,8 @@ backend:
   name: github
   repo: YasminKhawaja/test-site
   branch: main
-  site_url: https://test-site-three-ebon.vercel.app
+
+site_url: https://test-site-three-ebon.vercel.app
 
 media_folder: "images"
 
