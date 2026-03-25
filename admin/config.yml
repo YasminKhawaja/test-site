@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: YasminKhawaja/test-site
   branch: main
+  client_id: "Ov23li1n0ypqYhc1guPy"
 
 media_folder: "images"
 
