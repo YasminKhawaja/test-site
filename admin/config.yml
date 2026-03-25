@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: YasminKhawaja/test-site-three
+  repo: YasminKhawaja/Test-Site
   branch: main
 
 media_folder: "images"
