@@ -1,10 +1,6 @@
 backend:
-  name: github
-  repo: YasminKhawaja/test-site
+  name: git-gateway
   branch: main
-  base_url: https://api.github.com
-  auth_endpoint: https://github.com/login/oauth/authorize
-  client_id: "Ov23li1n0ypqYhc1guPy"
 
 media_folder: "images"
 
