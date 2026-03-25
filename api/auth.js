@@ -1,5 +1,7 @@
 export default function handler(req, res) {
-  res.redirect(
-    `https://github.com/login/oauth/authorize?client_id=Ov23li1n0ypqYhc1guPy&scope=repo`,
-  );
+  const clientId = "Ov23li1n0ypqYhc1guPy";
+
+  const redirectUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&scope=repo`;
+
+  res.redirect(redirectUrl);
 }
