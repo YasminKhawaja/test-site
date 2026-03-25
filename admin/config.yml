@@ -22,6 +22,7 @@ backend:
   name: github
   repo: YasminKhawaja/test-site
   branch: main
+  auth_endpoint: https://test-site-three-ebon.vercel.app/api/auth
 
 site_url: https://test-site-three-ebon.vercel.app
 
