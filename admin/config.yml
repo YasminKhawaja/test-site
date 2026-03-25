@@ -1,7 +1,7 @@
 backend:
-  name: test-repo
-
-local_backend: true
+  name: github
+  repo: YasminKhawaja/test-site
+  branch: main
 
 media_folder: "images"
 
