@@ -1,18 +1,15 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Test Site</title>
-  </head>
-  <body>
-    <h1 id="title"></h1>
-    <p id="content"></p>
+<script>
+  fetch("/index.md")
+    .then((res) => res.text())
+    .then((text) => {
+      // verwijder frontmatter (--- blok)
+      const content = text.split("---")[2];
 
-    <script>
-      fetch("/index.md")
-        .then((res) => res.text())
-        .then((text) => {
-          document.getElementById("content").innerText = text;
-        });
-    </script>
-  </body>
-</html>
+      // simpele markdown → html
+      const html = content
+        .replace(/\n/g, "<br>")
+        .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+
+      document.body.innerHTML = html;
+    });
+</script>
