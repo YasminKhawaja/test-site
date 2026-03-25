@@ -1,3 +1,19 @@
+# backend:
+#   name: git-gateway
+#   branch: main
+
+# media_folder: "images"
+
+# collections:
+#   - name: "pages"
+#     label: "Pages"
+#     files:
+#       - file: "index.md"
+#         label: "Home"
+#         name: "home"
+#         fields:
+#           - { label: "Content", name: "body", widget: "markdown" }
+
 backend:
   name: git-gateway
   branch: main
@@ -7,9 +23,9 @@ media_folder: "images"
 collections:
   - name: "pages"
     label: "Pages"
-    files:
-      - file: "index.md"
-        label: "Home"
-        name: "home"
-        fields:
-          - { label: "Content", name: "body", widget: "markdown" }
+    folder: "pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
