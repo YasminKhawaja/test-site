@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: YasminKhawaja/Test-Site
-  branch: main
+  branch: master
 
 media_folder: "images"
 
